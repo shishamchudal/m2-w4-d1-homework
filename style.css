@@ -1,0 +1,216 @@
+/* style.css - Updated for a more professional look */
+body {
+    font-family: 'Arial', Helvetica, sans-serif; /* More common sans-serif */
+    background-color: #f8f9fa; /* Light gray background for body */
+    color: #333; /* Darker, more readable text color */
+    line-height: 1.6; /* Improved line height for readability */
+}
+
+/* Container adjustments */
+.container {
+    background-color: white; /* Solid white container */
+    border-radius: 0.7em;
+    padding: 30px; /* Increased padding for more whitespace */
+    margin-top: 30px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Header Styling - More prominent and styled */
+header.header {
+    background-color: #eef0eb; /* Very light, warm background for header */
+    padding: 20px 25px;
+    border-bottom: 1px solid #ddd; /* Light border to separate header */
+    margin-bottom: 25px; /* Margin below header */
+}
+
+header.header .navbar-brand,
+header.header .nav-link {
+    color: #c06c84; /*  Dusty rose/mauve color for brand and links */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+header.header .navbar-brand:hover,
+header.header .nav-link:hover {
+    color: #6c5b7b; /* Darker purple on hover */
+}
+
+
+header.header .navbar-brand {
+    font-family: 'Sacramento', cursive;
+    font-size: 2.5em; /* Slightly larger brand font */
+}
+
+.navbar-toggler-icon {
+    background-color: #c06c84; /* Toggler icon color to match brand */
+}
+
+/* Navigation Styling */
+.navbar-nav .nav-item {
+    margin-left: 15px; /* Spacing between nav items */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1em;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem; /* Slightly rounded nav links */
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    background-color: #f8d2d4; /* Light pink background on active/hover */
+    color: #333; /* Dark text color on hover/active */
+}
+
+
+/* Main Content Styling */
+main h2 {
+    color: #5b8a72; /*  Olive green for headings */
+    text-transform: uppercase;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem; /* Adjusted margins for headings */
+    padding-left: 0; /* Remove left padding */
+    font-size: 2em; /* Slightly larger headings */
+    letter-spacing: 0.05em; /* Subtle letter spacing for headings */
+}
+
+/* Image Component Styling */
+.image-component {
+    text-align: center;
+    margin-bottom: 2.5rem; /* More space below image */
+}
+
+.image-component img {
+    max-width: 100%; /* Ensure image is responsive within container */
+    border-radius: 0.5rem; /* More rounded image corners */
+    border: 8px solid white; /* White border looks cleaner */
+    box-shadow: 0.2rem 0.3rem 0.5rem rgba(0,0,0,0.1); /* Subtle shadow for image */
+}
+
+
+/* Comment Section Styling */
+#blogposts {
+    padding: 0; /* Remove padding for comment section */
+}
+
+.card.mb-3 {
+    border: none; /* Remove card border */
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05); /* Lighter shadow for cards */
+    margin-bottom: 1.5rem !important; /* Increased margin between comments */
+}
+
+.card-body {
+    padding: 1.5rem; /* Slightly increased card body padding */
+}
+
+.card-title {
+    margin-bottom: 0.75rem; /* More space below author name */
+    font-size: 1.15em;
+    font-weight: 600; /* Semi-bold author name */
+}
+
+.card-text {
+    word-wrap: break-word;
+    color: #555; /* Slightly muted comment text */
+}
+
+/* Comment Box Specific Styling */
+.post {
+    position: relative;
+    word-wrap: break-word;
+    max-width: 100%;
+}
+
+.reply {
+    float: right;
+    color: #007bff; /* Keep Bootstrap primary color for reply */
+    cursor: pointer;
+    font-size: 0.9em;
+    opacity: 0.8; /* Slightly faded reply link */
+    transition: opacity 0.3s ease;
+}
+
+.reply:hover {
+    opacity: 1; /* Fully visible on hover */
+    text-decoration: underline; /* Underline on hover for better affordance */
+}
+
+
+/* Profile Image and Box Styles -  Slightly adjusted */
+.profile-container {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 12px; /* A bit more space */
+    vertical-align: top;
+}
+
+.profile-image {
+    width: 55px; /* Slightly larger profile images */
+    height: 55px;
+    object-fit: cover;
+    border: 2px solid #fff; /* White border around profile image */
+    border-radius: 50%;
+    box-shadow: 0 0 0.2rem rgba(0,0,0,0.15); /* Very subtle shadow */
+}
+
+.profile-box {
+    position: absolute;
+    top: 60px; /* Adjusted to be further below the image */
+    left: -10px; /* Slightly adjust left position */
+    background-color: white;
+    border: 1px solid #ddd; /* Lighter border for profile box */
+    padding: 20px; /* More padding in profile box */
+    border-radius: 0.5em;
+    box-shadow: 0 0.3rem 0.7rem rgba(0, 0, 0, 0.2); /* More prominent shadow for profile box */
+    z-index: 10;
+    width: 250px; /* Wider profile box for more bio text */
+}
+
+.profile-box h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 1.3em; /* Slightly larger author name in profile box */
+    color: #c06c84; /* Match brand color */
+}
+
+.profile-box p {
+    overflow-wrap: break-word;
+    margin-bottom: 10px;
+    font-size: 1em; /* Slightly larger bio text */
+    color: #666; /* Muted bio text color */
+}
+
+.close-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: none;
+    border: none;
+    font-size: 1.2em; /* Slightly larger close button */
+    cursor: pointer;
+    color: #777;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.close-button:hover {
+    opacity: 0.9;
+}
+
+
+/* Footer Styling - Simple and clean */
+footer {
+    padding: 25px 0;
+    font-size: 0.95em;
+    color: #777; /* Darker muted footer text */
+    border-top: 1px solid #eee; /* Very light top border for footer */
+    margin-top: 30px; /* Margin above footer */
+}
+
+
+/* Optional: Sidebar area styling - if you decide to add content there */
+.col-md-3 {
+    padding: 20px;
+    /* You can add background color or other styles for the sidebar if you use it */
+}
